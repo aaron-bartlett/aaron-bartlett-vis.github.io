@@ -1,1 +1,77 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .panel {
+            width: 45%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel img {
+            width: 100%;
+            height: auto;
+        }
+
+        .panel-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .panel-caption {
+            font-size: 1em;
+            color: #555;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Website</h1>
+        <p>Welcome to this simple HTML website with a header and two image panels side by side.</p>
+    </header>
+
+    <div class="container">
+        <div class="panel">
+            <img src="https://via.placeholder.com/400" alt="Image 1">
+            <div class="panel-title">Image Title 1</div>
+            <div class="panel-caption">This is a caption for the first image.</div>
+        </div>
+
+        <div class="panel">
+            <img src="https://via.placeholder.com/400" alt="Image 2">
+            <div class="panel-title">Image Title 2</div>
+            <div class="panel-caption">This is a caption for the second image.</div>
+        </div>
+    </div>
+</body>
+</html>
+
